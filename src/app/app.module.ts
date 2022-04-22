@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PrimengModule } from './modules/primeng.module';
+import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +13,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PrimengModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
